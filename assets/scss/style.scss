@@ -1,0 +1,347 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+header{
+    background-color: #292929;
+    height: 770px;
+}
+
+.container-left{
+    max-width: 590px;
+    margin-left: auto;
+    padding-left: 30px;
+    box-sizing: content-box;
+     
+    img{
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+.container-right{
+    max-width: 590px;
+    margin-right: auto;
+    padding-right: 30px;
+    box-sizing: content-box;
+}
+
+.main-nav{
+    width: 100%;
+    display: flex;
+
+
+}
+.nav-logo{
+    width: 100%;
+    background-color: transparent;
+    padding-block: 30px;
+    max-width: 50%;
+}
+
+.nav-wrapper{
+    width: 100%;
+    padding-block: 30px;
+    padding-left: 74px;
+    background-color: #fff;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.container{
+    max-width: 1180px;
+    margin: 0 auto;
+    box-sizing: content-box;
+    padding-inline: 30px;
+}
+
+
+
+.nav-content{
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    &--language{
+        display: flex;
+        align-items: center;
+    
+        strong{
+            text-transform: uppercase;
+            font-family: "Raleway", sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 16.44px;
+            text-align: left;
+            color:  #1B1B1B;
+            
+            
+            span{
+                margin-inline: 8px 8px;
+                height: 16px;
+                border: 1px solid #1B1B1B;
+            }
+        }
+    
+    
+    }
+
+    &--select{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    &--btn{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        &-primary{
+            text-transform: uppercase;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            padding: 12px 30px;
+            border: 1px solid #000;
+            border-radius: 30px;
+            font-family: "Raleway", sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 16.44px;
+            text-align: center;
+            color: #1B1B1B;
+            transition: .4s;
+
+            &:active{
+                transform: scale(0.9);
+            }
+        }
+
+        &-secondary{
+            text-transform: uppercase;
+            background-color: #BC2222;
+            border: none;
+            outline: none;
+            padding: 13px 30px;
+            border-radius: 30px;
+            font-family: "Raleway", sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 16.44px;
+            text-align: center;
+            color: #fff;
+            transition: .4s;
+
+            &:active{
+                transform: scale(0.9);
+            }
+        }
+    }
+
+    &--list{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 48px;
+
+        &-team{
+            white-space: nowrap;
+            text-transform: uppercase;
+            font-family: "Raleway", sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 16.44px;
+            text-align: center;
+            color: #1B1B1B;
+            border-bottom: 1px solid transparent;
+            padding-bottom: 3px;
+            transition: .6s;
+
+            &:hover{
+                border-bottom: 1px solid #1B1B1B;
+            }
+        }
+    }
+}
+
+.hero-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding-block: 200px 160px;
+
+    &--description{
+        font-family: "Raleway", sans-serif;
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 24.65px;
+        text-align: center;
+        color: #fff;
+    }
+
+    &--title{
+        font-family: "Baskervville", serif;
+        font-size: 64px;
+        font-weight: 400;
+        line-height: 64px;
+        text-align: center;
+        color: #fff;
+    }
+
+    &--line{
+        width: 100%;
+        max-width: 980px;
+        border: 1px solid #fff;
+    }
+
+    &--text{
+        width: 100%;
+        max-width: 800px;
+        font-family: "Raleway", sans-serif;
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 24.65px;
+        text-align: center;
+        color: #fff;
+    }
+
+}
+
+.nav-menu{
+    width: 100%;    
+    display: flex;
+    justify-content: flex-end;
+    padding: 50px;
+    display: none;
+}
+.bi-list{
+    font-size: 38px;
+    color: #fff;
+}
+
+#footer{
+    background-color: #1B1B1B;
+}
+
+.footer-content{
+    padding-block: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 200px;
+
+    strong{
+        font-family: "Raleway", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16.44px;
+        text-align: left;
+        color: #fff;
+    }  
+    
+    span{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        small{
+            font-family: "Raleway", sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 16.44px;
+            text-align: right;
+            color: #fff;
+        }
+    }
+}
+
+@media only screen and (max-width:1210px){
+    .nav-wrapper{
+        display: none;
+    }
+
+    .nav-menu{
+        display: flex;
+    }
+
+
+.hero-wrapper{
+    gap: 44px;
+    padding-block:140px;
+
+    &--description{
+        font-size: 19px;
+    }
+
+    &--title{
+        font-size: 54px;
+    }
+
+    &--line{
+        max-width: 880px;
+    }
+
+    &--text{
+        font-size: 18px;
+    }
+
+}
+
+
+}
+
+@media only screen and (max-width:710px){
+    .nav-wrapper{
+        display: none;
+    }
+
+    .nav-menu{
+        display: flex;
+    }
+
+
+.hero-wrapper{
+    gap: 44px;
+    padding-block:140px;
+
+    &--description{
+        font-size: 16px;
+    }
+
+    &--title{
+        font-size: 44px;
+    }
+
+    &--line{
+        max-width: 480px;
+    }
+
+    &--text{
+        font-size: 18px;
+    }
+
+}
+
+
+}
+
+
+
+
